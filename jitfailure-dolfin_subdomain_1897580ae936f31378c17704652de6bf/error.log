@@ -1,0 +1,11 @@
+/var/folders/gf/s6jrb_5n1478lr347ypzlh9h0000gn/T/tmp9b836qlp/dolfin_subdomain_1897580ae936f31378c17704652de6bf.cpp:64:17: error: no matching function for call to 'near'
+         return near(pow(pow(x[0], 2) + pow(x[1], 2), 0.5)), r)  && near(x[2], 0);
+                ^~~~
+/Users/emanuelwreeby/opt/miniconda3/envs/fenicsproject/include/dolfin/math/basic.h:56:8: note: candidate function not viable: requires at least 2 arguments, but 1 was provided
+  bool near(double x, double x0, double eps=DOLFIN_EPS);
+       ^
+/var/folders/gf/s6jrb_5n1478lr347ypzlh9h0000gn/T/tmp9b836qlp/dolfin_subdomain_1897580ae936f31378c17704652de6bf.cpp:64:63: error: expected ';' after return statement
+         return near(pow(pow(x[0], 2) + pow(x[1], 2), 0.5)), r)  && near(x[2], 0);
+                                                              ^
+                                                              ;
+2 errors generated.

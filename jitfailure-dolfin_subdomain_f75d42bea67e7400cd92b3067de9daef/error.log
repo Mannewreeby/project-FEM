@@ -1,0 +1,10 @@
+/var/folders/gf/s6jrb_5n1478lr347ypzlh9h0000gn/T/tmp6p7o0gci/dolfin_subdomain_f75d42bea67e7400cd92b3067de9daef.cpp:63:17: error: no matching function for call to 'near'
+         return near(pow(pow(x[0], 2) + pow(x[1], 2), 0.5)), r)  && near(x[2], 0);
+                ^~~~
+/Users/emanuelwreeby/opt/miniconda3/envs/fenicsproject/include/dolfin/math/basic.h:56:8: note: candidate function not viable: requires at least 2 arguments, but 1 was provided
+  bool near(double x, double x0, double eps=DOLFIN_EPS);
+       ^
+/var/folders/gf/s6jrb_5n1478lr347ypzlh9h0000gn/T/tmp6p7o0gci/dolfin_subdomain_f75d42bea67e7400cd92b3067de9daef.cpp:63:62: error: use of undeclared identifier 'r'
+         return near(pow(pow(x[0], 2) + pow(x[1], 2), 0.5)), r)  && near(x[2], 0);
+                                                             ^
+2 errors generated.
