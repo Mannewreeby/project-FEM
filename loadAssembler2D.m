@@ -13,7 +13,7 @@ np = size(p,2);
 nt = size(t,2);
 
 % Allocate load matrix
-b = zeros(np,2);
+b = zeros(np,1);
 
 % Loop over elements
 for K = 1:nt
@@ -26,9 +26,9 @@ for K = 1:nt
     % Area
     area = polyarea(x,y);
     % Element load vector
-    bK = [f';f';f']/3*area;
+    bK = [f(1);f(1);f(1)]/3*area;
     % Add element vector to b
-    b(loc2glb, :) = b(loc2glb, :) + bK;  
+    b(loc2glb) = b(loc2glb) + bK;  
 end
 
 end
